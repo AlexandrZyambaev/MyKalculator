@@ -1,7 +1,6 @@
 package com.example.mykalculator
 
 import android.os.Bundle
-import android.provider.CalendarContract.Colors
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -20,7 +19,6 @@ import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.HorizontalDivider
@@ -42,7 +40,6 @@ import androidx.compose.ui.unit.sp
 import com.example.mykalculator.ui.theme.DarkGrey
 import com.example.mykalculator.ui.theme.MyKalculatorTheme
 import com.example.mykalculator.ui.theme.SuperLightGrey
-//import 'package:flutter/material.dart';
 
 
 class MainActivity : ComponentActivity() {

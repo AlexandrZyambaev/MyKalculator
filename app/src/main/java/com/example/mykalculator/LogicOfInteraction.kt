@@ -47,7 +47,10 @@ fun LogicOfInteraction(text : String, state: MutableState<String>, expression: M
         }
 
         // Добавляем знак ".", если строка не пустая и последний символ является числом
-        "." -> if(state.value.isNotEmpty() && state.value.last().isDigit())  state.value += "."
+        "." -> if(state.value.isNotEmpty() && state.value.last().isDigit()) {
+                    if (state.value.lastIndexOf(' ') >= state.value.lastIndexOf('.'))
+                        state.value += "."
+                }
 
         // Добавляем знак "+", если строка не пустая и последний символ является числом
         "+" -> {
